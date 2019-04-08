@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis</title>
+    <link>https://kan-bayashi.github.io/Taco2withBERT/</link>
+    <description>Recent content on Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Apr 2019 12:07:51 +0900</lastBuildDate>
+    
+	<atom:link href="https://kan-bayashi.github.io/Taco2withBERT/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://kan-bayashi.github.io/Taco2withBERT/</link>
+      <pubDate>Mon, 08 Apr 2019 12:07:51 +0900</pubDate>
+      
+      <guid>https://kan-bayashi.github.io/Taco2withBERT/</guid>
+      <description>Abstract We propose an end-to-end text-to-speech (TTS) synthesis model that explicitly uses information from pre-trained embeddings of the text. Recent work in natural language processing has developed self-supervised representations of text that have proven very effective as pre-training for language understanding tasks. We propose using one such pre-trained representation (BERT) to encode input phrases, as an additional input to a Tacotron2-based sequence-to-sequence TTS model. We hypothesize that the text embeddings contain information about the semantics of the phrase and the importance of each word, which should help TTS systems produce more natural prosody and pronunciation.</description>
+    </item>
+    
+  </channel>
+</rss>
