@@ -1,101 +1,103 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
+    
+    
+    
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <title>Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis</title>
-    
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <link href="https://kan-bayashi.github.io/Taco2withBERT/css/github-gist.min.css" rel="stylesheet">
-    <link href="https://kan-bayashi.github.io/Taco2withBERT/css/style.css" rel="stylesheet">
-    
-    <link rel="apple-touch-icon" href="https://kan-bayashi.github.io/Taco2withBERT/img/apple-touch-icon.png">
-    <link rel="icon" href="https://kan-bayashi.github.io/Taco2withBERT/img/favicon.ico">
-    
-    <meta name="generator" content="Hugo 0.54.0" />
-    
-    <link rel="alternate" type="application/atom+xml" href="https://kan-bayashi.github.io/Taco2withBERT/index.xml" title="Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+   &ndash; Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis
+
+    </title>
     
     
+    <meta name="description" property="og:description" content="Abstract We propose an end-to-end text-to-speech (TTS) synthesis model that explicitly uses information from pre-trained embeddings of the text. Recent work in natural language processing has developed self-supervised representations of text that have proven very effective as pre-training for language understanding tasks. We propose using one such pre-trained representation (BERT) to encode input phrases, as an additional input to a Tacotron2-based sequence-to-sequence TTS model. We hypothesize that the text embeddings contain information about the semantics of the phrase and the importance of each word, which should help TTS systems produce more natural prosody and pronunciation.|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/Taco2withBERT/assets/syntax.css">
+    <link rel="stylesheet" href="/Taco2withBERT/assets/primer-build.css">
+    <link rel="stylesheet" href="/Taco2withBERT/assets/style.css">
   </head>
-  <body class="list home">
-    <header class="header">
-      <div class="wrap">
-        
-        <h1 class="logo"><a href="https://kan-bayashi.github.io/Taco2withBERT/">Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis </a></h1>
-        
-        <button class="menu-toggle" type="button"></button>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://kan-bayashi.github.io/Taco2withBERT/">
+    Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis
+  </a>
+
+  
+  
+</nav>
+
       </div>
-    </header>
-    <nav class="nav">
-    <ul class="menu">
-      
-      
-    </ul>
-    </nav>
-    <main class="main">
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1"></div>
+  </div>
+  <div class="Subhead-description">
+    
 
 
 
 
 
 
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2019-07-01. Published at: 2019-07-01.">
+        
+          Published: 2019-07-01
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+<article>
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
 
+<h2 id="abstract">Abstract</h2>
 
-<article class="first-entry">
-  <header class="entry-header">
-    <h2></h2>
-  </header>
-  <section class="entry-content">
-   <p>Abstract We propose an end-to-end text-to-speech (TTS) synthesis model that explicitly uses information from pre-trained embeddings of the text. Recent work in natural language processing has developed self-supervised representations of text that have proven very effective as pre-training for language understanding tasks. We propose using one such pre-trained representation (BERT) to encode input phrases, as an additional input to a Tacotron2-based sequence-to-sequence TTS model. We hypothesize that the text embeddings contain information about the semantics of the phrase and the importance of each word, which should help TTS systems produce more natural prosody and pronunciation....</p>
-  </section>
-  <footer class="entry-footer">
-    <time >2019.4.8</time>
-  </footer>
-  <a class="entry-link" href="https://kan-bayashi.github.io/Taco2withBERT/"></a>
-</article>
+<p>We propose an end-to-end text-to-speech (TTS) synthesis model that explicitly uses information from pre-trained
+embeddings of the text. Recent work in natural language processing has developed self-supervised representations
+of text that have proven very effective as pre-training for language understanding tasks. We propose using one
+such pre-trained representation (BERT) to encode input phrases, as an additional input to a Tacotron2-based
+sequence-to-sequence TTS model. We hypothesize that the text embeddings contain information about the semantics
+of the phrase and the importance of each word, which should help TTS systems produce more natural prosody and
+pronunciation. We conduct subjective listening tests of our proposed models using the 24-hour LJSpeech corpus,
+ﬁnding that they improve mean opinion scores modestly but significantly over a baseline TTS model without
+pre-trained text embedding input.</p>
 
+<h2 id="generated-examples">Generated examples</h2>
 
+<h3 id="baseline">Baseline</h3>
 
-
-
-</main>
-<footer class="footer">
-  <span>&copy; 2019 Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis</span>
-  <span>&middot;</span>
-  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
-  <span>&middot;</span>
-  <span><a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 3.0</a>️</span>
-</footer>
-<script src="https://kan-bayashi.github.io/Taco2withBERT/js/instantclick.min.js" data-no-instant></script>
-<script data-no-instant>InstantClick.init();</script>
-<script src="https://kan-bayashi.github.io/Taco2withBERT/js/highlight.min.js" data-no-instant></script>
-<script data-no-instant>
-  hljs.initHighlightingOnLoad();
-  setMenuListener();
-
-  InstantClick.on('change', function() {
-    document.querySelectorAll('pre code').forEach((block) => {
-      hljs.highlightBlock(block);
-    });
-    setMenuListener();
-  });
-
-  function setMenuListener() {
-    var menuToggle = document.querySelector('.menu-toggle');
-    var body = document.querySelector('body');
-    menuToggle.addEventListener('click', function() {
-      body.classList.toggle('no-scroll');
-    }, false);
-  }
-</script>
-</body>
-</html>
-
+<p><audio controls="controls" >
+<source src="/Taco2withBERT/wav/baseline/LJ050-0075.wav" autoplay/>
+Your browser does not support the audio element.
+</audio>
+<audio controls="controls" >
+<source src="/Taco2withBERT/wav/baseline/LJ050-0090.wav" autoplay/>
+Your browser does not support the audio element.
 </audio>
 <audio controls="controls" >
 <source src="/Taco2withBERT/wav/baseline/LJ050-0094.wav" autoplay/>
@@ -239,46 +241,75 @@ Your browser does not support the audio element.
   year={2019}
 }
 </code></pre>
-</div>
-  <footer class="post-footer">
+
+  </section>
+
+  <section>
     
-  </footer>
-  
-  
-  
-  
+      
+    
+  </section>
 </article>
 
-</main>
-<footer class="footer">
-  <span>&copy; 2019 Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis</span>
-  <span>&middot;</span>
-  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
-  <span>&middot;</span>
-  <span><a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 3.0</a>️</span>
-</footer>
-<script src="https://kan-bayashi.github.io/Taco2withBERT/js/instantclick.min.js" data-no-instant></script>
-<script data-no-instant>InstantClick.init();</script>
-<script src="https://kan-bayashi.github.io/Taco2withBERT/js/highlight.min.js" data-no-instant></script>
-<script data-no-instant>
-  hljs.initHighlightingOnLoad();
-  setMenuListener();
+      </div>
 
-  InstantClick.on('change', function() {
-    document.querySelectorAll('pre code').forEach((block) => {
-      hljs.highlightBlock(block);
-    });
-    setMenuListener();
-  });
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b></b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#generated-examples">Generated examples</a>
+<ul>
+<li><a href="#baseline">Baseline</a></li>
+<li><a href="#phrase-level-model">Phrase-level model</a></li>
+<li><a href="#subword-level-model">Subword-level model</a></li>
+</ul></li>
+<li><a href="#examples-from-a-b-forced-choice-with-high-agreement">Examples from A/B forced choice with high agreement</a>
+<ul>
+<li><a href="#subword-example-preferred">Subword example preferred</a></li>
+<li><a href="#baseline-example-preferred">Baseline example preferred</a></li>
+</ul></li>
+<li><a href="#citation">Citation</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
 
-  function setMenuListener() {
-    var menuToggle = document.querySelector('.menu-toggle');
-    var body = document.querySelector('body');
-    menuToggle.addEventListener('click', function() {
-      body.classList.toggle('no-scroll');
-    }, false);
-  }
-</script>
-</body>
+  
+    <div>
+      
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+  </body>
 </html>
-
