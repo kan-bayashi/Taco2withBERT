@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<meta name="generator" content="Hugo 0.54.0" />
     
     
     
@@ -8,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-   &ndash; Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis
+  Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis &ndash; Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis
 
     </title>
     
     
-    <meta name="description" property="og:description" content="Abstract We propose an end-to-end text-to-speech (TTS) synthesis model that explicitly uses information from pre-trained embeddings of the text. Recent work in natural language processing has developed self-supervised representations of text that have proven very effective as pre-training for language understanding tasks. We propose using one such pre-trained representation (BERT) to encode input phrases, as an additional input to a Tacotron2-based sequence-to-sequence TTS model. We hypothesize that the text embeddings contain information about the semantics of the phrase and the importance of each word, which should help TTS systems produce more natural prosody and pronunciation.|">
+    <meta name="description" property="og:description" content="">
     
 
     <meta name="apple-mobile-web-app-title" content="Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis">
@@ -47,247 +48,38 @@
       <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
         
 
-<div class="Subhead">
-  <div class="Subhead-heading">
-    <div class="h1 mt-3 mb-1"></div>
-  </div>
-  <div class="Subhead-description">
-    
+<div>
 
-
-
-
-
-
-    
-    <div class="float-md-right">
-      <span title="Lastmod: 2019-07-01. Published at: 2019-07-01.">
-        
-          Published: 2019-07-01
-        
-      </span>
-    </div>
-    
-  </div>
-</div>
-<article>
+  <h1>Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis</h1>
   
-  <section class="pb-6 mb-3 border-bottom">
-    
 
-<h2 id="abstract">Abstract</h2>
+  
+  <div>
+    <div>
+      <a href="/Taco2withBERT/">
+        <h3></h3>
+      </a>
+      <small>https://kan-bayashi.github.io/Taco2withBERT/</small>
+      2019-07-01
+    </div>
+    Abstract We propose an end-to-end text-to-speech (TTS) synthesis model that explicitly uses information from pre-trained embeddings of the text. Recent work in natural language processing has developed self-supervised representations of text that have proven very effective as pre-training for language understanding tasks. We propose using one such pre-trained representation (BERT) to encode input phrases, as an additional input to a Tacotron2-based sequence-to-sequence TTS model. We hypothesize that the text embeddings contain information about the semantics of the phrase and the importance of each word, which should help TTS systems produce more natural prosody and pronunciation.
+  </div>
+  
 
-<p>We propose an end-to-end text-to-speech (TTS) synthesis model that explicitly uses information from pre-trained
-embeddings of the text. Recent work in natural language processing has developed self-supervised representations
-of text that have proven very effective as pre-training for language understanding tasks. We propose using one
-such pre-trained representation (BERT) to encode input phrases, as an additional input to a Tacotron2-based
-sequence-to-sequence TTS model. We hypothesize that the text embeddings contain information about the semantics
-of the phrase and the importance of each word, which should help TTS systems produce more natural prosody and
-pronunciation. We conduct subjective listening tests of our proposed models using the 24-hour LJSpeech corpus,
-ﬁnding that they improve mean opinion scores modestly but significantly over a baseline TTS model without
-pre-trained text embedding input.</p>
+  
 
-<h2 id="generated-examples">Generated examples</h2>
 
-<h3 id="baseline">Baseline</h3>
+</div>
 
-<p><audio controls="controls" >
-<source src="/Taco2withBERT/wav/baseline/LJ050-0075.wav" autoplay/>
-Your browser does not support the audio element.
-</audio>
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/baseline/LJ050-0090.wav" autoplay/>
-Your browser does not support the audio element.
-</audio>
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/baseline/LJ050-0094.wav" autoplay/>
-Your browser does not support the audio element.
-</audio>
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/baseline/LJ050-0098.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<h3 id="phrase-level-model">Phrase-level model</h3>
-
-<p><audio controls="controls" >
-<source src="/Taco2withBERT/wav/sentence-based-bert/LJ050-0075.wav" autoplay/>
-Your browser does not support the audio element.
-</audio>
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/sentence-based-bert/LJ050-0090.wav" autoplay/>
-Your browser does not support the audio element.
-</audio>
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/sentence-based-bert/LJ050-0094.wav" autoplay/>
-Your browser does not support the audio element.
-</audio>
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/sentence-based-bert/LJ050-0098.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<h3 id="subword-level-model">Subword-level model</h3>
-
-<p><audio controls="controls" >
-<source src="/Taco2withBERT/wav/subword-based-bert/LJ050-0075.wav" autoplay/>
-Your browser does not support the audio element.
-</audio>
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/subword-based-bert/LJ050-0090.wav" autoplay/>
-Your browser does not support the audio element.
-</audio>
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/subword-based-bert/LJ050-0094.wav" autoplay/>
-Your browser does not support the audio element.
-</audio>
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/subword-based-bert/LJ050-0098.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<h2 id="examples-from-a-b-forced-choice-with-high-agreement">Examples from A/B forced choice with high agreement</h2>
-
-<h3 id="subword-example-preferred">Subword example preferred</h3>
-
-<ul>
-<li>text: <code>result in some degree of interference with the personal liberty of those involved.</code></li>
-</ul>
-
-<p><strong>Subword</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/subword-based-bert/LJ050-0073.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<p><strong>Baseline</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/baseline/LJ050-0073.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<ul>
-<li>text: <code>In June 1964, the Secret Service sent to a number of Federal law enforcement and intelligence agencies</code></li>
-</ul>
-
-<p><strong>Subword</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/subword-based-bert/LJ050-0078.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<p><strong>Baseline</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/baseline/LJ050-0078.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<ul>
-<li>text: <code>determination to use a means, other than legal or peaceful, to satisfy his grievance, end quote, within the meaning of the new criteria.</code></li>
-</ul>
-
-<p><strong>Subword</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/subword-based-bert/LJ050-0098.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<p><strong>Baseline</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/baseline/LJ050-0098.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<h3 id="baseline-example-preferred">Baseline example preferred</h3>
-
-<ul>
-<li>text <code>it has obtained the services of outside consultants, such as the Rand Corporation,</code></li>
-</ul>
-
-<p><strong>Subword</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/subword-based-bert/LJ050-0046.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<p><strong>Baseline</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/baseline/LJ050-0046.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<ul>
-<li>text <code>and from a specialist in psychiatric prognostication at Walter Reed Hospital.</code></li>
-</ul>
-
-<p><strong>Subword</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/subword-based-bert/LJ050-0049.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<p><strong>Baseline</strong> :
-<audio controls="controls" >
-<source src="/Taco2withBERT/wav/baseline/LJ050-0049.wav" autoplay/>
-Your browser does not support the audio element.
-</audio></p>
-
-<h2 id="citation">Citation</h2>
-
-<pre><code>@inproceedings{hayashi2019pretrained,
-  title={Pre-trained Text Embeddings for Enhanced Text-to-Speech Synthesis},
-  author={Hayashi, Tomoki and Watanabe, Shinji and Toda, Tomoki and Takeda, Kazuya and Toshniwal, Shubham and Livescu, Karen},
-  booktitle={Interspeech 2019 (Accepted)},
-  year={2019}
-}
-</code></pre>
-
-  </section>
-
-  <section>
-    
-      
-    
-  </section>
-</article>
 
       </div>
 
       <div id="side" class="pr-1 bg-white">
         <aside class="pr-3">
           
-  
-    <div id="toc" class="Box Box--blue mb-3">
-      <b></b>
-      <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#abstract">Abstract</a></li>
-<li><a href="#generated-examples">Generated examples</a>
-<ul>
-<li><a href="#baseline">Baseline</a></li>
-<li><a href="#phrase-level-model">Phrase-level model</a></li>
-<li><a href="#subword-level-model">Subword-level model</a></li>
-</ul></li>
-<li><a href="#examples-from-a-b-forced-choice-with-high-agreement">Examples from A/B forced choice with high agreement</a>
-<ul>
-<li><a href="#subword-example-preferred">Subword example preferred</a></li>
-<li><a href="#baseline-example-preferred">Baseline example preferred</a></li>
-</ul></li>
-<li><a href="#citation">Citation</a></li>
-</ul></li>
-</ul>
-</nav>
-    </div>
-  
-
-  
-    <div>
-      
-    </div>
-  
-
+          <div id="toc" class="mb-3">
+          </div>
+          
         </aside>
       </div>
 
